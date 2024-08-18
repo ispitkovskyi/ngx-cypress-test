@@ -35,3 +35,7 @@
 //     }
 //   }
 // }
+
+Cypress.Commands.add('openHomePage', () => {
+    cy.visit('/') // Enough to specify '/', Cypress will navigate to the baseUrl specified in the cypress.config.js
+})
