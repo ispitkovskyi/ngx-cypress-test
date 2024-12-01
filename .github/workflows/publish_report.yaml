@@ -61,7 +61,7 @@ jobs:
     environment:
       name: github-pages
       # Return url from deployment step
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}/ux-api-test-report.html
     runs-on: ubuntu-latest
 
     steps:
