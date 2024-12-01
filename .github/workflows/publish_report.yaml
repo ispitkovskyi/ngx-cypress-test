@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload report
-          path: 'ux-api-html-report/'
+          path: './ux-api-html-report/'
 
       - name: Deploy to GitHub Pages
         id: deployment
