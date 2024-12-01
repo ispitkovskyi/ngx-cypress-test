@@ -53,10 +53,10 @@ jobs:
     needs: test
     name: Publish jest report
     ### Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-#    permissions:
+    permissions:
 #      contents: read
-#      pages: write
-#      id-token: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       ### Return url from deployment step
