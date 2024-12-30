@@ -1,9 +1,9 @@
 name: Run UI Rest API tests by Jest on Staging
 
 on:
-#  push:
-#    branches:
-#      - master
+  push:
+    branches:
+      - master
 
   workflow_dispatch:
     inputs:
@@ -25,7 +25,7 @@ on:
       - master
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete..
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
